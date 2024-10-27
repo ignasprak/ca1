@@ -16,33 +16,29 @@
         <h1>Picture Editor</h1>
         <div>
             <label for="size-input">Enter a size:</label>
-            <input type="number" id="size-input" name="size" min="2" step="1">
+            <input type="number" id="size-inputw" name="size" min="2" step="1" placeholder="Length">
             <span>x</span>
-            <input type="number" id="size-input" name="size" min="2" step="1">
+            <input type="number" id="size-inputl" name="size" min="2" step="1" placeholder="Width">
         </div>
         
         <br>
         <div>
-            <button>Generate</button>
-        </div>
-
-        <div>
-            <h1>USABLE ICONS</h1>
-            <table>
-                <tr>
-                    <td><img src="media/arrow.png" alt="Arrow" width="100" height="100"></td>
-                    <td><img src="media/square.png" alt="Box" width="100" height="100"></td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <h1>Preview</h1>
+            <button id="generate-button">Generate</button>
             <div>
+                <h3>Availiable Icons</h3>
                 <table>
-
+                    <tr>
+                        <td><img src="media/arrow.png" alt="Arrow" width="75" height="75"></td>
+                        <td><img src="media/text.png" alt="Text" width="75" height="75"></td>
+                    </tr>
                 </table>
             </div>
+            <br><br>
+            <div id="grid-container"></div>
         </div>
+
+       
+
     </div>
 
     <script type="module" src="index.js"></script>
